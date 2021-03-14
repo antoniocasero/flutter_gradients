@@ -1179,7 +1179,7 @@ class FlutterGradients {
           double startAngle = 0.0,
           double endAngle = math.pi * 2,
           TileMode tileMode = TileMode.repeated}) =>
-      _find(names[name.index],
+      find(names[name.index],
           type: type,
           center: center,
           radius: radius,
@@ -4512,7 +4512,7 @@ class FlutterGradients {
       return FlutterLinearGradients.zeusMiracle(tileMode: tileMode);
   }
 
-  static Gradient _find(String name,
+  static Gradient find(String name,
       {GradientType type = GradientType.linear,
       AlignmentGeometry center = Alignment.center,
       double radius = 0.5,
